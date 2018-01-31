@@ -38,11 +38,19 @@ h1 {
 #nav a:hover, #nav a:active {
 	background-color: #7a991a;
 }
-
+<hr />
 .caption {
 	color: black;
 	font-family: Georgia, "times new roman", serif;
 	font-style: italic;
 	font-size: 0.8em;
 	margin-top: 0;
+}
+
+#footer {
+	color: black;
+	font-family: Georgia, "times new roman", serif;
+	font-style: italic;
+	font-size: 0.8em;
+	border-top: 1px solid black;
 }
