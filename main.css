@@ -30,8 +30,8 @@
 
 #nav a:link, #nav a:visited {
   dispaly:block;
-  color: red;
-  background-color:blue;
+  color: #50394c;
+  background-color: #fefbd8;
   font-weight: bold;
   text-align:center;
   text-decoration: none;
@@ -40,7 +40,7 @@
 }
 
 #nav a:hover, #nav a:active {
-  background-color: orange
+  background-color: #f4e1d2
 }
 
 .caption {
