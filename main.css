@@ -1,0 +1,13 @@
+<head>
+<link rel="stylesheet" type="texts/css" href="-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"
+  </head>
+
+  body{
+    background-color: lightblue;
+  }
+
+  h1{
+    color:navy;
+    margin:20px
+  }
