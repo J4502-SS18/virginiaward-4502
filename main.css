@@ -38,3 +38,27 @@
   padding: 4px;
   font-family: helvetica, arial, sans-serif;
 }
+
+#nav a:hover, #nav a:active {
+  background-color: orange
+}
+
+.caption {
+  color: black;
+  font-family: georgia, "times new roman", serif;
+  font-style: italic;
+  font-size: 0.8em;
+  margin-top: 0;
+  text-align: right;
+}
+
+#footer {
+  color: black;
+  font-family: georgia, "times new roman", serif;
+  font-size: 0.8em;
+  border-top: 1px solid black;
+}
+
+img {
+  border:none;
+}
