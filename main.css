@@ -47,7 +47,7 @@
 }
 
 .caption {
-  color: black;
+  color: #50394c;
   font-family: georgia, "times new roman", serif;
   font-style: italic;
   font-size: 0.8em;
@@ -56,7 +56,7 @@
 }
 
 #footer {
-  color: black;
+  color: #50394c;
   font-family: georgia, "times new roman", serif;
   font-size: 0.8em;
   border-top: 1px solid black;
