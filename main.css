@@ -11,18 +11,18 @@
 
   h1{
     color: #6b5b95;
-    margin:20px
+    margin:20px;
     font-family: georgia, "times new roman", serif;
   }
 
   #container {
-    padding:0;
-    list-style-type:none;
+    width: 95%;
+    margin: 0 auto;
   }
 
   #nav {
-    padding:0
-    list-style-type:none;
+    padding: 0;
+    list-style-type: none;
   }
 
 #nav li {
@@ -43,7 +43,7 @@
 }
 
 #nav a:hover, #nav a:active {
-  background-color: #f4e1d2
+  background-color: #f4e1d2;
 }
 
 .caption {
@@ -63,5 +63,5 @@
 }
 
 img {
-  border:none;
+  border: none;
 }
