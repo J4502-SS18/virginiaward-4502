@@ -5,13 +5,14 @@
 
 
   p {
-    color: red;
+    color: #666666;
     font-family: helvetica, arial, sans-serif;
   }
 
   h1{
     color: #6b5b95;
     margin:20px
+    font-family: georgia, "times new roman", serif;
   }
 
   #container {
