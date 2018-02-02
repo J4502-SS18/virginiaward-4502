@@ -23,9 +23,9 @@
   }
 
 #nav li {
-  margin:0;
-  padding:0
-  border-bottom:1px solid #ccc;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid #ccc;
 }
 
 #nav a:link, #nav a:visited {
