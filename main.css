@@ -29,7 +29,7 @@
 }
 
 #nav a:link, #nav a:visited {
-  dispaly:block;
+  display: block;
   color: #50394c;
   background-color: #fefbd8;
   font-weight: bold;
