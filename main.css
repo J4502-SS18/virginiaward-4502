@@ -4,6 +4,9 @@
     font-family: 'Merriweather', Georgia, "Times new roman", serif;
   }
 
+.italic {
+  font-weight: bold;
+}
   h1{
     color: #6b5b95;
     margin:20px;
