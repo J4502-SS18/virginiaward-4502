@@ -36,7 +36,7 @@
   text-align:center;
   text-decoration: none;
   padding: 4px;
-  font-family: helvetica, arial, sans-serif;
+  font-family: "NotoSans-Regular",helvetica, sans-serif;
 }
 
 #nav a:hover, #nav a:active {
