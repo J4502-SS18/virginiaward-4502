@@ -1,64 +1,120 @@
+
+body{
+  font-family: 'NotoSans-italic'
+  }
+
+h1 {
+  font-size: 2em;
+  color: #70c1b3;
+}
+
   p {
-    color: #666666;
-    font-family: 'Noto Sans', sans-serif;
+    color: #50514f;
   }
 
-.italic {
-  font-weight: bold;
-}
-  h1{
-    color: #2d5f73;
-    margin:20px;
-    font-family: 'Noto Serif', serif;
-  }
-
-  #container {
-    width: 95%;
-    margin: 0 auto;
-    background-color: white;
-  }
-
-  #nav {
+  .navigation {
+    list-style: none;
+    margin: 0;
+    background: #247ba0;
     padding: 0;
-    list-style-type: none;
+    display: flex;
+    flex-flow: column;
   }
 
-#nav li {
-  margin: 0;
-  padding: 0;
-  border-bottom: 1px solid #2d5f73;
-}
+  .navigation a {
+    text-decoration: none;
+    display: block;
+    color: #ffe006;
+    padding: 10px;
+    text-align: center;
+    border-bottom: none;
+    font-family: 'NotoSerif'
+  }
 
-#nav a:link, #nav a:visited {
-  display: block;
-  color: #f2b8a2;
-  background-color: #538e86;
-  font-weight: bold;
-  text-align:center;
-  text-decoration: none;
-  padding: 4px;
-  font-family: 'Noto Sans', sans-serif;
-}
+  .navigation li:last-of-type a {
+    border-bottom: none;
+  }
 
-#nav a:hover, #nav a:active {
-  background-color: #f4e1d2;
-}
-
-.caption {
-  color: #2d5f73;
-  font-family: 'NotoSans-italic', sans-serif;
-  font-size: 0.8em;
-  margin-top: 0;
-  text-align: right;
-}
-
-#footer {
-  color: #2d5f73;
-  font-family: 'Noto Sans', sans-serif;
-  font-size: 0.8em;
-  border-top: 1px solid black;
-}
+  .footer {
+    font-family: 'NotoSerif', bold;
+  }
 
 img {
+    width: 100%;
+  }
+
+header {
+  background: white;
+}
+
+footer {
+  background: white;
+}
+
+article {
+  background: white;
+}
+
+.aside-1 {
+  background: #f25f5c;
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+header, article, aside, footer {
+  flex: 1 100%;
+  padding: 10px;
+}
+
+@media (min-width:800px) {
+
+.navigation {
+  flex-flow: row wrap;
+  justify-content: flex-end;
+}
+
+.navigation a {
   border: none;
+}
+
+.navigation a:hover {
+  background: black;
+}
+
+aside {
+  flex: 1 auto;
+}
+
+article {
+  flex: 3 0px;
+}
+
+.aside-1 {
+  order: 1;
+}
+
+article {
+  order: 2;
+}
+
+footer {
+  order: 4;
+}
+
+article {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+}
+
+.image {
+  width: 45%;
+  margin-right: 10px;
+}
+
+.joke {
+  width: 45%;
 }
