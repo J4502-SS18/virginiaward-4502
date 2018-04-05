@@ -1,119 +1,119 @@
-.title {
-  display: flex;
-  justify-content: space-between;
+body{
+  font-family: 'NotoSans-italic'
+  }
+
+h1 {
+  font-size: 2em;
+  color: #70c1b3;
 }
 
-nav ul {
-  display: flex;
-  flex-flow: column;
+  p {
+    color: #50514f;
+  }
+
+  .navigation {
+    list-style: none;
+    margin: 0;
+    background: #247ba0;
+    padding: 0;
+    display: flex;
+    flex-flow: column;
+  }
+
+  .navigation a {
+    text-decoration: none;
+    display: block;
+    color: #ffe006;
+    padding: 10px;
+    text-align: center;
+    border-bottom: none;
+    font-family: 'NotoSerif'
+  }
+
+  .navigation li:last-of-type a {
+    border-bottom: none;
+  }
+
+  .footer {
+    font-family: 'NotoSerif', bold;
+  }
+
+img {
+    width: 100%;
+  }
+
+header {
+  background: white;
 }
 
-.authorbox img {
-  /* visibility: hidden; */
-  display: none;
-}
-
-.pullquote{
-  display: none;
+footer {
+  background: white;
 }
 
 article {
-  margin-bottom: 0.7em;
-  border-bottom: 1px solid #ccc;
+  background: white;
 }
 
-article:last-of-type {
-  border-bottom: none;
+.aside-1 {
+  background: #f25f5c;
 }
 
-@media screen and (min-width: 450px) {
-  nav ul {
-    flex-flow: row;
-    justify-content: space-between;
-  }
-}
-  @media screen and (min-width: 600px) {
-    #container {
-      width: 80%;
-    }
-
-    .authorbox img{
-      display: block;
-      width: 100%;
-      margin-top: 0.5em;
-    }
-
-    .authorbox {
-      width: 25%;
-      max-width: 200px;
-      float: left;
-      margin-right: 20px;
-    }
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
 }
 
-@media screen and (min-width: 800px) {
-  .item1 {
-    margin-right: auto;
-  }
-
-  nav ul li {
-    margin: 5px;
-  }
-
-  .pullquote {
-    display: block;
-  }
+header, article, aside, footer {
+  flex: 1 100%;
+  padding: 10px;
 }
 
-@media screen and (min-width: 1000px) {
+@media (min-width:800px) {
 
-  article {
-    display: grid;
-    grid-template-columns: 200px 1fr 1fr;
-    grid-gap: 20px;
-    grid-template-areas:
-    "a b b"
-    "c c e"
-    ". d d";
-  }
-
-  .authorbox {
-    width: 100%;
-    grid-area: a;
-  }
-
-  .section1 {
-    grid-area: b;
-  }
-
-  .image {
-    grid-area: c;
-  }
-
-  .section2 {
-    grid-area: d;
-  }
-
-  .pullquote {
-    grid-area: e;
-    margin-top: 0;
-  }
-
+.navigation {
+  flex-flow: row wrap;
+  justify-content: flex-end;
 }
 
-@media screen and (min-width: 1200px) {
-  article {
-    display: grid;
-    grid-template-columns: 200px 1fr 1fr 1fr;
-    grid-gap: 20px;
-    grid-template-areas:
-    "a b b e"
-    "c c c ."
-    ". d d .";
-  }
-
+.navigation a {
+  border: none;
 }
-/* ====================================================
-These are styles that will be used later in the example.
-They're just tedious to write out.
-==================================================== */
+
+.navigation a:hover {
+  background: black;
+}
+
+aside {
+  flex: 1 auto;
+}
+
+article {
+  flex: 3 0px;
+}
+
+.aside-1 {
+  order: 1;
+}
+
+article {
+  order: 2;
+}
+
+footer {
+  order: 4;
+}
+
+article {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+}
+
+.image {
+  width: 45%;
+  margin-right: 10px;
+}
+
+.joke {
+  width: 45%;
+}
