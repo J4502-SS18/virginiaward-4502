@@ -1,80 +1,29 @@
-body{
-  font-family: 'NotoSans-italic'
-  }
-
-h1 {
-  font-size: 2em;
-  color: #70c1b3;
+.title {
+  display: flex;
+  justify-content: space-between;
 }
 
-  p {
-    color: #50514f;
-  }
+nav ul {
+  display: flex;
+  flex-flow: column;
+}
+
+.authorbox img {
+  /* visibility: hidden; */
+  display: none;
+}
+
+.pullquote{
+  display: none;
+}
 
 article {
   margin-bottom: 0.7em;
   border-bottom: 1px solid #ccc;
 }
 
-img {
-    width: 50%;
-  }
-
-header {
-  background: white;
-}
-
-footer {
-  background: white;
-}
-
-article {
-  background: white;
-}
-
-aside-1 {
-  background: #f25f5c;
-}
-
-wrapper {
-  display: flex;
-  flex-flow: row wrap;
-}
-
-header, article, aside-1, footer {
-  flex: 1 100%;
-  padding: 10px;
-}
-
 article:last-of-type {
   border-bottom: none;
-}
-
-.navigation {
-  list-style: none;
-  margin: 0;
-  background: #247ba0;
-  padding: 0;
-  display: flex;
-  flex-flow: column;
-}
-
-.navigation a {
-  text-decoration: none;
-  display: block;
-  color: #ffe006;
-  padding: 10px;
-  text-align: center;
-  border-bottom: none;
-  font-family: 'NotoSerif'
-}
-
-.navigation li:last-of-type a {
-  border-bottom: none;
-}
-
-.footer {
-  font-family: 'NotoSerif', bold;
 }
 
 @media screen and (min-width: 450px) {
@@ -88,111 +37,83 @@ article:last-of-type {
       width: 80%;
     }
 
-    @media screen and (min-width: 800px) {
-    .item1 {
-      margin-right: auto;
-    }
-
-    nav ul li {
-      margin: 5px;
-    }
-  }
-
-  .navigation{
+    .authorbox img{
+      display: block;
       width: 100%;
-      grid-area: a;
+      margin-top: 0.5em;
     }
 
-    .title {
-      grid-area: b;
+    .authorbox {
+      width: 25%;
+      max-width: 200px;
+      float: left;
+      margin-right: 20px;
     }
+}
 
-    .image {
-      grid-area: c;
-    }
-
-    .joke {
-      grid-area: d;
-    }
-
-    .aside-1 {
-      grid-area: e;
-      margin-top: 0;
-    }
-
+@media screen and (min-width: 800px) {
+  .item1 {
+    margin-right: auto;
   }
 
-  @media screen and (min-width: 1200px) {
-    article {
-      display: grid;
-      grid-template-columns: 200px 1fr 1fr 1fr;
-      grid-gap: 20px;
-      grid-template-areas:
-      "a b b e"
-      "c c c ."
-      ". d d .";
-    }
-
+  nav ul li {
+    margin: 5px;
   }
-  @media screen and (min-width: 1000px) {
 
-    article {
-      display: grid;
-      grid-template-columns: 200px 1fr 1fr;
-      grid-gap: 20px;
-      grid-template-areas:
-      "a b b"
-      "c c e"
-      ". d d";
-    }
-
-
-@media (min-width:800px) {
-
-.navigation {
-  flex-flow: row wrap;
-  justify-content: flex-end;
+  .pullquote {
+    display: block;
+  }
 }
 
-.navigation a {
-  border: none;
+@media screen and (min-width: 1000px) {
+
+  article {
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr;
+    grid-gap: 20px;
+    grid-template-areas:
+    "a b b"
+    "c c e"
+    ". d d";
+  }
+
+  .authorbox {
+    width: 100%;
+    grid-area: a;
+  }
+
+  .section1 {
+    grid-area: b;
+  }
+
+  .image {
+    grid-area: c;
+  }
+
+  .section2 {
+    grid-area: d;
+  }
+
+  .pullquote {
+    grid-area: e;
+    margin-top: 0;
+  }
+
 }
 
-.navigation a:hover {
-  background: black;
-}
+@media screen and (min-width: 1200px) {
+  article {
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr 1fr;
+    grid-gap: 20px;
+    grid-template-areas:
+    "a b b e"
+    "c c c ."
+    ". d d .";
+  }
 
-aside {
-  flex: 1 auto;
 }
-
-article {
-  flex: 3 0px;
-}
-
-.aside-1 {
-  order: 1;
-}
-
-article {
-  order: 2;
-}
-
-footer {
-  order: 4;
-}
-
-article {
-  display: flex;
-  flex-flow: row;
-  flex-wrap: wrap;
-}
-
-.image {
-  width: 45%;
-  margin-right: 10px;
-}
-
-.joke {
-  width: 45%;
-}
+/* ====================================================
+These are styles that will be used later in the example.
+They're just tedious to write out.
+==================================================== */
