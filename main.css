@@ -1,3 +1,12 @@
+.title {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+  flex-flow: column;
+}
 
 body{
   font-family: 'NotoSans-italic'
@@ -12,6 +21,83 @@ h1 {
     color: #50514f;
   }
 
+article {
+  margin-bottom: 0.7em;
+  border-bottom: 1px solid #ccc;
+}
+
+article:last-of-type {
+  border-bottom: none;
+}
+
+@media screen and (min-width: 450px) {
+  nav ul {
+    flex-flow: row;
+    justify-content: space-between;
+  }
+}
+  @media screen and (min-width: 600px) {
+    #container {
+      width: 80%;
+    }
+
+    @media screen and (min-width: 800px) {
+    .item1 {
+      margin-right: auto;
+    }
+
+    nav ul li {
+      margin: 5px;
+    }
+  }
+
+  .navigation{
+      width: 100%;
+      grid-area: a;
+    }
+
+    .title {
+      grid-area: b;
+    }
+
+    .image {
+      grid-area: c;
+    }
+
+    .joke {
+      grid-area: d;
+    }
+
+    .aside-1 {
+      grid-area: e;
+      margin-top: 0;
+    }
+
+  }
+
+  @media screen and (min-width: 1200px) {
+    article {
+      display: grid;
+      grid-template-columns: 200px 1fr 1fr 1fr;
+      grid-gap: 20px;
+      grid-template-areas:
+      "a b b e"
+      "c c c ."
+      ". d d .";
+    }
+
+  }
+  @media screen and (min-width: 1000px) {
+
+    article {
+      display: grid;
+      grid-template-columns: 200px 1fr 1fr;
+      grid-gap: 20px;
+      grid-template-areas:
+      "a b b"
+      "c c e"
+      ". d d";
+    }
   .navigation {
     list-style: none;
     margin: 0;
