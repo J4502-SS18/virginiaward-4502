@@ -16,6 +16,36 @@ article {
   border-bottom: 1px solid #ccc;
 }
 
+img {
+    width: 100%;
+  }
+
+header {
+  background: white;
+}
+
+footer {
+  background: white;
+}
+
+article {
+  background: white;
+}
+
+aside-1 {
+  background: #f25f5c;
+}
+
+wrapper {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+header, article, aside, footer {
+  flex: 1 100%;
+  padding: 10px;
+}
+
 article:last-of-type {
   border-bottom: none;
 }
@@ -114,36 +144,6 @@ article:last-of-type {
   .footer {
     font-family: 'NotoSerif', bold;
   }
-
-img {
-    width: 100%;
-  }
-
-header {
-  background: white;
-}
-
-footer {
-  background: white;
-}
-
-article {
-  background: white;
-}
-
-.aside-1 {
-  background: #f25f5c;
-}
-
-.wrapper {
-  display: flex;
-  flex-flow: row wrap;
-}
-
-header, article, aside, footer {
-  flex: 1 100%;
-  padding: 10px;
-}
 
 @media (min-width:800px) {
 
