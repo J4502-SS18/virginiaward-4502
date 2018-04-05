@@ -35,6 +35,13 @@ h1 {
     border-bottom: none;
   }
 
+@media screen and (min-width: 450px) {
+  nav ul {
+      flex-flow: row;
+      justify-content: space-between;
+    }
+}
+
   .footer {
     font-family: 'NotoSerif', bold;
   }
@@ -81,7 +88,7 @@ header, article, aside, footer {
 }
 
 .navigation a:hover {
-  background: black;
+  background: #70c1b3;
 }
 
 aside {
