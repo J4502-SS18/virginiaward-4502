@@ -17,7 +17,7 @@ article {
 }
 
 img {
-    width: 100%;
+    width: 50%;
   }
 
 header {
@@ -41,13 +41,40 @@ wrapper {
   flex-flow: row wrap;
 }
 
-header, article, aside, footer {
+header, article, aside-1, footer {
   flex: 1 100%;
   padding: 10px;
 }
 
 article:last-of-type {
   border-bottom: none;
+}
+
+.navigation {
+  list-style: none;
+  margin: 0;
+  background: #247ba0;
+  padding: 0;
+  display: flex;
+  flex-flow: column;
+}
+
+.navigation a {
+  text-decoration: none;
+  display: block;
+  color: #ffe006;
+  padding: 10px;
+  text-align: center;
+  border-bottom: none;
+  font-family: 'NotoSerif'
+}
+
+.navigation li:last-of-type a {
+  border-bottom: none;
+}
+
+.footer {
+  font-family: 'NotoSerif', bold;
 }
 
 @media screen and (min-width: 450px) {
@@ -118,32 +145,7 @@ article:last-of-type {
       "c c e"
       ". d d";
     }
-  .navigation {
-    list-style: none;
-    margin: 0;
-    background: #247ba0;
-    padding: 0;
-    display: flex;
-    flex-flow: column;
-  }
 
-  .navigation a {
-    text-decoration: none;
-    display: block;
-    color: #ffe006;
-    padding: 10px;
-    text-align: center;
-    border-bottom: none;
-    font-family: 'NotoSerif'
-  }
-
-  .navigation li:last-of-type a {
-    border-bottom: none;
-  }
-
-  .footer {
-    font-family: 'NotoSerif', bold;
-  }
 
 @media (min-width:800px) {
 
