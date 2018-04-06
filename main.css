@@ -99,14 +99,6 @@ header, article, aside, footer {
     margin: 0 13px 13px 0;
   }
 
-aside {
-  flex: 1 auto;
-}
-
-article {
-  flex: 3 0px;
-}
-
 .aside-1 {
   order: 1;
 }
@@ -130,6 +122,14 @@ article {
 
 .pullquote {
   grid-area: c;
+}
+
+aside {
+  flex: 1 auto;
+}
+
+article {
+  flex: 3 0px;
 }
 
 article {
