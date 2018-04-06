@@ -3,7 +3,7 @@ body{
   font-family: 'NotoSans-italic'
   }
 
-h1 {
+h1, h2 {
   font-size: 2em;
   color: #70c1b3;
 }
@@ -92,6 +92,14 @@ header, article, aside, footer {
 }
 }
 
+  .pullquote {
+    display: block;
+    background: #ddf;
+    font-weight: bold;
+    padding: 13px;
+    margin: 0 13px 13px 0;
+  }
+
 aside {
   flex: 1 auto;
 }
@@ -104,6 +112,27 @@ article {
   order: 1;
 }
 
+.image {
+  width: 45%;
+  margin-right: 10px;
+}
+
+.joke {
+  width: 45%;
+}
+
+.image {
+  grid-area: a;
+}
+
+.joke {
+  grid-area: b;
+}
+
+.pullquote {
+  grid-area: c;
+}
+
 article {
   order: 2;
 }
@@ -113,16 +142,10 @@ footer {
 }
 
 article {
-  display: flex;
-  flex-flow: row;
-  flex-wrap: wrap;
-}
-
-.image {
-  width: 45%;
-  margin-right: 10px;
-}
-
-.joke {
-  width: 45%;
+  display: grid;
+  grid-template-columns: 200px 1fr 1fr 1fr;
+  grid-template-areas:
+  "a a b b"
+  ". . c c"
+  ". . . .";
 }
