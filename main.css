@@ -112,21 +112,25 @@ article {
   order: 1;
 } */
 
-.image {
-  width: 80%;
-  margin-right: 10px;
-}
-
-.joke {
-  width: 45%;
+article {
+  display: grid;
+  grid-template-columns: 200px 1fr 1fr 1fr;
+  grid-gap: 20px;
+  grid-template-areas:
+  "a a b"
+  "c . b"
+  ". . b";
 }
 
 .image {
   grid-area: a;
+  width: 50%;
+  margin-right: 10px;
 }
 
 .joke {
   grid-area: b;
+  width: 50%;
 }
 
 .pullquote {
@@ -144,12 +148,3 @@ article {
 footer {
   order: 4;
 } */
-
-article {
-  display: grid;
-  grid-template-columns: 200px 1fr 1fr;
-  grid-template-areas:
-  "a b"
-  "b b"
-  ". b";
-}
