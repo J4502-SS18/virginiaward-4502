@@ -112,30 +112,34 @@ article {
   order: 1;
 } */
 
-article {
-  display: grid;
-  grid-template-columns: 200px 1fr 1fr 1fr;
-  grid-gap: 20px;
-  grid-template-areas:
-  "a a b"
-  "c . b"
-  ". . b";
+@media screen and (min-width: 1000px) {
+
+  article {
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr 1fr;
+    grid-gap: 20px;
+    grid-template-areas:
+    "a a b"
+    "c . b"
+    ". . b";
+  }
+
+  .image {
+    grid-area: a;
+    width: 50%;
+    margin-right: 10px;
+  }
+
+  .joke {
+    grid-area: b;
+    width: 50%;
+  }
+
+  .pullquote {
+    grid-area: c;
+  }
 }
 
-.image {
-  grid-area: a;
-  width: 50%;
-  margin-right: 10px;
-}
-
-.joke {
-  grid-area: b;
-  width: 50%;
-}
-
-.pullquote {
-  grid-area: c;
-}
 
 /* .aside-1 {
   order: 1;
