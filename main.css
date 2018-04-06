@@ -35,46 +35,47 @@ h1, h3 {
     border-bottom: none;
   }
 
-@media screen and (min-width: 450px) {
+  .footer {
+    font-family: 'NotoSerif', bold;
+    }
+
+@media screen and (min-width: 600px) {
   nav ul {
       flex-flow: row;
       justify-content: space-between;
     }
-}
 
-  .footer {
-    font-family: 'NotoSerif', bold;
+    img {
+        width: 100%;
+      }
+
+    header {
+      background: white;
+    }
+
+    footer {
+      background: white;
+    }
+
+    article {
+      background: white;
+    }
+
+    .aside-1 {
+      background: #f25f5c;
+    }
+
+    .wrapper {
+      display: flex;
+      flex-flow: row wrap;
+    }
+
+    header, article, aside, footer {
+      flex: 1 100%;
+      padding: 10px;
+    }
+
   }
-
-img {
-    width: 100%;
-  }
-
-header {
-  background: white;
-}
-
-footer {
-  background: white;
-}
-
-article {
-  background: white;
-}
-
-.aside-1 {
-  background: #f25f5c;
-}
-
-.wrapper {
-  display: flex;
-  flex-flow: row wrap;
-}
-
-header, article, aside, footer {
-  flex: 1 100%;
-  padding: 10px;
-}
 
 @media (min-width:800px) {
 
@@ -90,61 +91,61 @@ header, article, aside, footer {
 .navigation a:hover {
   background: #70c1b3;
 }
+
+.pullquote {
+  display: block;
+  background: none;
+  font-weight: bold;
+  padding: 13px;
+  margin: 0 13px 13px 0;
 }
 
-  .pullquote {
-    display: block;
-    background: none;
-    font-weight: bold;
-    padding: 13px;
-    margin: 0 13px 13px 0;
-  }
-
 aside {
-  flex: 1 auto;
+flex: 1 auto;
 }
 
 article {
-  flex: 3 0px;
+flex: 3 0px;
 }
 
 .aside-1 {
-  order: 1;
+order: 1;
 }
 
 .image {
-  width: 45%;
-  margin-right: 10px;
+width: 45%;
+margin-right: 10px;
 }
 
 .joke {
-  width: 100%;
+width: 100%;
 }
 
 .image {
-  grid-area: a;
+grid-area: a;
 }
 
 .joke {
-  grid-area: b;
+grid-area: b;
 }
 
 .pullquote {
-  grid-area: c;
+grid-area: c;
 }
 
 article {
-  order: 2;
+order: 2;
 }
 
 footer {
-  order: 4;
+order: 4;
 }
 
 article {
-  display: grid;
-  grid-template-columns: 200px 1fr 1fr 1fr;
-  grid-template-areas:
-  "a b"
-  ". c";
+display: grid;
+grid-template-columns: 200px 1fr 1fr 1fr;
+grid-template-areas:
+"a b"
+". c";
+}
 }
