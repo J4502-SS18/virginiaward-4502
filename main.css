@@ -130,10 +130,10 @@ article {
 }
 
 .pullquote {
-  grid-area: a;
+  grid-area: c;
 }
 
-.aside-1 {
+/* .aside-1 {
   order: 1;
 }
 
@@ -143,7 +143,7 @@ article {
 
 footer {
   order: 4;
-}
+} */
 
 article {
   display: grid;
