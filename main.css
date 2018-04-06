@@ -3,7 +3,7 @@ body{
   font-family: 'NotoSans-italic'
   }
 
-h1, h3 {
+h1, h2 {
   font-size: 2em;
   color: #70c1b3;
 }
@@ -94,13 +94,13 @@ header, article, aside, footer {
 
   .pullquote {
     display: block;
-    background: none;
-    font-weight: lighter;
+    background: #ddf;
+    font-weight: bold;
     padding: 13px;
     margin: 0 13px 13px 0;
   }
 
-/* aside {
+aside {
   flex: 1 auto;
 }
 
@@ -110,37 +110,27 @@ article {
 
 .aside-1 {
   order: 1;
-} */
+}
 
-  article {
-    display: grid;
-    grid-template-columns: 200px 1fr 1fr 1fr;
-    grid-gap: 20px;
-    grid-template-areas:
-    "a a b"
-    "c . b"
-    ". . b";
-  }
+.image {
+  width: 45%;
+  margin-right: 10px;
+}
 
-  .image {
-    grid-area: a;
-    width: 50%;
-    margin-right: 10px;
-  }
+.joke {
+  width: 45%;
+}
 
-  .joke {
-    grid-area: b;
-    width: 50%;
-  }
+.image {
+  grid-area: a;
+}
 
-  .pullquote {
-    grid-area: c;
-  }
+.joke {
+  grid-area: b;
+}
 
-
-
-/* .aside-1 {
-  order: 1;
+.pullquote {
+  grid-area: c;
 }
 
 article {
@@ -149,4 +139,13 @@ article {
 
 footer {
   order: 4;
-} */
+}
+
+article {
+  display: grid;
+  grid-template-columns: 200px 1fr 1fr 1fr;
+  grid-template-areas:
+  "a a b b"
+  ". . c c"
+  ". . . .";
+}
