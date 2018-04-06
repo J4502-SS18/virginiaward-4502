@@ -3,7 +3,7 @@ body{
   font-family: 'NotoSans-italic'
   }
 
-h1, h2 {
+h1, h3 {
   font-size: 2em;
   color: #70c1b3;
 }
@@ -94,7 +94,7 @@ header, article, aside, footer {
 
   .pullquote {
     display: block;
-    background: #ddf;
+    background: none;
     font-weight: bold;
     padding: 13px;
     margin: 0 13px 13px 0;
@@ -143,9 +143,9 @@ footer {
 
 article {
   display: grid;
-  grid-template-columns: 200px 1fr 1fr 1fr;
+  grid-template-columns: 200px 1fr 1fr;
   grid-template-areas:
-  "a a b b"
-  ". . c c"
-  ". . . .";
+  "a b"
+  "c b"
+  ". b";
 }
