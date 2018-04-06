@@ -94,7 +94,7 @@ header, article, aside, footer {
 
   .pullquote {
     display: block;
-    background: white;
+    background: none;
     font-weight: lighter;
     padding: 13px;
     margin: 0 13px 13px 0;
