@@ -1,0 +1,480 @@
+body{
+  font-family: 'NotoSans-italic'
+  }
+
+h1 {
+  font-size: 2em;
+  color: #70c1b3;
+}
+
+  p {
+    color: #50514f;
+  }
+
+article {
+  margin-bottom: 0.7em;
+  border-bottom: 1px solid #ccc;
+}
+
+img {
+    width: 50%;
+  }
+
+header {
+  background: white;
+}
+
+footer {
+  background: white;
+}
+
+article {
+  background: white;
+}
+
+aside-1 {
+  background: #f25f5c;
+}
+
+wrapper {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+header, article, aside-1, footer {
+  flex: 1 100%;
+  padding: 10px;
+}
+
+article:last-of-type {
+  border-bottom: none;
+}
+
+.navigation {
+  list-style: none;
+  margin: 0;
+  background: #247ba0;
+  padding: 0;
+  display: flex;
+  flex-flow: column;
+}
+
+.navigation a {
+  text-decoration: none;
+  display: block;
+  color: #ffe006;
+  padding: 10px;
+  text-align: center;
+  border-bottom: none;
+  font-family: 'NotoSerif'
+}
+
+.navigation li:last-of-type a {
+  border-bottom: none;
+}
+
+.footer {
+  font-family: 'NotoSerif', bold;
+}
+
+@media screen and (min-width: 450px) {
+  nav ul {
+    flex-flow: row;
+    justify-content: space-between;
+  }
+}
+  @media screen and (min-width: 600px) {
+    #container {
+      width: 80%;
+    }
+
+    @media screen and (min-width: 800px) {
+    .item1 {
+      margin-right: auto;
+    }
+
+    nav ul li {
+      margin: 5px;
+    }
+  }
+
+  .navigation{
+      width: 100%;
+      grid-area: a;
+    }
+
+    .title {
+      grid-area: b;
+    }
+
+    .image {
+      grid-area: c;
+    }
+
+    .joke {
+      grid-area: d;
+    }
+
+    .aside-1 {
+      grid-area: e;
+      margin-top: 0;
+    }
+
+  }
+
+  @media screen and (min-width: 1200px) {
+    article {
+      display: grid;
+      grid-template-columns: 200px 1fr 1fr 1fr;
+      grid-gap: 20px;
+      grid-template-areas:
+      "a b b e"
+      "c c c ."
+      ". d d .";
+    }
+
+  }
+  @media screen and (min-width: 1000px) {
+
+    article {
+      display: grid;
+      grid-template-columns: 200px 1fr 1fr;
+      grid-gap: 20px;
+      grid-template-areas:
+      "a b b"
+      "c c e"
+      ". d d";
+    }
+
+
+@media (min-width:800px) {
+
+.navigation {
+  flex-flow: row wrap;
+  justify-content: flex-end;
+}
+
+.navigation a {
+  border: none;
+}
+
+.navigation a:hover {
+  background: black;
+}
+
+aside {
+  flex: 1 auto;
+}
+
+article {
+  flex: 3 0px;
+}
+
+.aside-1 {
+  order: 1;
+}
+
+article {
+  order: 2;
+}
+
+footer {
+  order: 4;
+}
+
+article {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+}
+
+.image {
+  width: 45%;
+  margin-right: 10px;
+}
+
+.joke {
+  width: 45%;
+}
+
+This is my second go-around... im copy and pasting my revised code here but it still doesn't look right
+
+body{
+  font-family: 'NotoSans-italic'
+  }
+
+h1 {
+  font-size: 2em;
+  color: #70c1b3;
+}
+
+  p {
+    color: #50514f;
+  }
+
+article {
+  margin-bottom: 0.7em;
+  border-bottom: 1px solid #ccc;
+}
+
+img {
+    width: 50%;
+  }
+
+header {
+  background: white;
+}
+
+footer {
+  background: white;
+}
+
+article {
+  background: white;
+}
+
+aside-1 {
+  background: #f25f5c;
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+header, article, aside-1, footer {
+  flex: 1 100%;
+  padding: 10px;
+}
+
+article:last-of-type {
+  border-bottom: none;
+}
+
+.navigation {
+  list-style: none;
+  margin: 0;
+  background: #247ba0;
+  padding: 0;
+  display: flex;
+  flex-flow: column;
+}
+
+.image {
+  width: 45%;
+  margin-right: 10px;
+}
+
+.joke {
+  width: 45%;
+}
+
+.navigation a {
+  text-decoration: none;
+  display: block;
+  color: #ffe006;
+  padding: 10px;
+  text-align: center;
+  border-bottom: none;
+  font-family: 'NotoSerif'
+}
+
+.navigation li:last-of-type a {
+  border-bottom: none;
+}
+
+.footer {
+  font-family: 'NotoSerif', bold;
+}
+
+@media (min-width:800px) {
+
+.navigation {
+  flex-flow: row wrap;
+  justify-content: flex-end;
+}
+
+.navigation a {
+  border: none;
+}
+
+.navigation a:hover {
+  background: black;
+}
+
+aside {
+  flex: 1 auto;
+}
+
+article {
+  flex: 3 0px;
+}
+
+.aside-1 {
+  order: 1;
+}
+
+article {
+  order: 2;
+}
+
+footer {
+  order: 4;
+}
+
+article {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+}
+
+body{
+  font-family: 'NotoSans-italic'
+  }
+
+h1, h2 {
+  font-size: 2em;
+  color: #70c1b3;
+}
+
+  p {
+    color: #50514f;
+  }
+
+  .navigation {
+    list-style: none;
+    margin: 0;
+    background: #247ba0;
+    padding: 0;
+    display: flex;
+    flex-flow: column;
+  }
+
+  .navigation a {
+    text-decoration: none;
+    display: block;
+    color: #ffe006;
+    padding: 10px;
+    text-align: center;
+    border-bottom: none;
+    font-family: 'NotoSerif'
+  }
+
+  .navigation li:last-of-type a {
+    border-bottom: none;
+  }
+
+@media screen and (min-width: 450px) {
+  nav ul {
+      flex-flow: row;
+      justify-content: space-between;
+    }
+}
+
+  .footer {
+    font-family: 'NotoSerif', bold;
+  }
+
+img {
+    width: 100%;
+  }
+
+header {
+  background: white;
+}
+
+footer {
+  background: white;
+}
+
+article {
+  background: white;
+}
+
+.aside-1 {
+  background: #f25f5c;
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+header, article, aside, footer {
+  flex: 1 100%;
+  padding: 10px;
+}
+
+@media (min-width:800px) {
+
+.navigation {
+  flex-flow: row wrap;
+  justify-content: flex-end;
+}
+
+.navigation a {
+  border: none;
+}
+
+.navigation a:hover {
+  background: #70c1b3;
+}
+}
+
+  .pullquote {
+    display: block;
+    background: #ddf;
+    font-weight: bold;
+    padding: 13px;
+    margin: 0 13px 13px 0;
+  }
+
+aside {
+  flex: 1 auto;
+}
+
+article {
+  flex: 3 0px;
+}
+
+.aside-1 {
+  order: 1;
+}
+
+.image {
+  width: 45%;
+  margin-right: 10px;
+}
+
+.joke {
+  width: 45%;
+}
+
+.image {
+  grid-area: a;
+}
+
+.joke {
+  grid-area: b;
+}
+
+.pullquote {
+  grid-area: c;
+}
+
+article {
+  order: 2;
+}
+
+footer {
+  order: 4;
+}
+
+article {
+  display: grid;
+  grid-template-columns: 200px 1fr 1fr 1fr;
+  grid-template-areas:
+  "a a b b"
+  ". . c c"
+  ". . . .";
+}
