@@ -203,3 +203,29 @@ article {
       order: 2;
   }
 }
+
+@media (min-width:800px) {
+
+nav ul{
+    display:flex;
+    flex-flow: row;
+    justify-content: flex-end;
+  }
+
+.menu-trigger{
+  display:none;
+}
+
+.navigation{
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end;
+    padding: 0;
+    margin: 0;
+  }
+
+.menu-trigger{
+    display: none;
+  }
+
+}
