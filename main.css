@@ -22,12 +22,6 @@ header {
     padding: 0 10px;
 }
 
-.menu-trigger {
-    order: 1;
-    font-size: 1.75em;
-    width: 2em;
-}
-
 header h1 {
     order: 2;
     font-size: 2em;
@@ -105,32 +99,15 @@ article {
   flex-flow: row wrap;
 }
 
+.menu-trigger {
+    order: 1;
+    font-size: 1.75em;
+    width: 2em;
+}
+
 header, article, aside, footer {
   flex: 1 100%;
   padding: 10px;
-}
-
-@media (min-width:800px) {
-
-  nav ul {
-      display: flex;
-  }
-
-  nav ul li {
-      border-top: none;
-  }
-
-  .menu-trigger {
-      display: none;
-  }
-
-  header h1 {
-      order: 1;
-  }
-
-  nav {
-      order: 2;
-  }
 }
 
 .navigation {
@@ -202,4 +179,27 @@ article {
   grid-template-areas:
   "a b"
   ". c";
+}
+
+@media (min-width:700px) {
+
+  nav ul {
+      display: flex;
+  }
+
+  nav ul li {
+      border-top: none;
+  }
+
+  .menu-trigger {
+      display: none;
+  }
+
+  header h1 {
+      order: 1;
+  }
+
+  nav {
+      order: 2;
+  }
 }
