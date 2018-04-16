@@ -177,8 +177,8 @@ article {
   display: grid;
   grid-template-columns: 200px 1fr 1fr 1fr;
   grid-template-areas:
-  "a b"
-  ". c";
+  "a a . ."
+  "a a b b";
 }
 
 @media (min-width:700px) {
