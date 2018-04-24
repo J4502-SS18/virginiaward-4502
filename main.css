@@ -2,6 +2,11 @@ body{
   font-family: 'NotoSans-italic'
   }
 
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
   nav ul li {
       display: block;
       border-top: 1px #79896d solid;
@@ -46,7 +51,8 @@ h1, h3 {
     background: #247ba0;
     padding: 0;
     display: flex;
-    flex-flow: column;
+    /* flex-flow: column; */
+    justify-content: space-between;
   }
 
   .navigation a {
@@ -96,7 +102,7 @@ article {
 }
 
 .menu-trigger {
-    order: 1;
+    order: 0;
     font-size: 1.75em;
     width: 2em;
 }
@@ -107,8 +113,7 @@ header, article, aside, footer {
 }
 
 .navigation {
-  flex-flow: row wrap;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 
 .navigation a {
@@ -207,7 +212,7 @@ nav ul{
 .navigation{
     display: flex;
     flex-flow: row;
-    justify-content: flex-end;
+    justify-content: space-around;
     padding: 0;
     margin: 0;
   }
