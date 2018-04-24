@@ -1,5 +1,5 @@
 body{
-  font-family: 'NotoSans-italic'
+  font-family: 'Noto Serif', 'sans-italic'
   }
 
 nav {
@@ -62,7 +62,7 @@ h1, h3 {
     padding: 10px;
     text-align: center;
     border-bottom: none;
-    font-family: 'NotoSerif'
+    font-family: 'Noto Serif'
   }
 
   .navigation li:last-of-type a {
