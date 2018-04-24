@@ -113,6 +113,10 @@ header, article, aside, footer {
 }
 
 .navigation {
+<<<<<<< HEAD
+=======
+  flex-flow: row wrap;
+>>>>>>> 4ba57120a3f544b799661abe01bc37b7f28df263
   justify-content: space-between;
 }
 
@@ -212,7 +216,11 @@ nav ul{
 .navigation{
     display: flex;
     flex-flow: row;
+<<<<<<< HEAD
     justify-content: space-around;
+=======
+    justify-content: space-between;
+>>>>>>> 4ba57120a3f544b799661abe01bc37b7f28df263
     padding: 0;
     margin: 0;
   }
