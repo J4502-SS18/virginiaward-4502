@@ -108,7 +108,7 @@ header, article, aside, footer {
 
 .navigation {
   flex-flow: row wrap;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 
 .navigation a {
@@ -207,7 +207,7 @@ nav ul{
 .navigation{
     display: flex;
     flex-flow: row;
-    justify-content: flex-end;
+    justify-content: space-between;
     padding: 0;
     margin: 0;
   }
